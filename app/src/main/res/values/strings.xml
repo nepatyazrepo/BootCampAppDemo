@@ -6,6 +6,7 @@
     <string name="login_input_username">Input Username</string>
     <string name="login_btn_login">login</string>
     <string name="login_btn_register">register</string>
+    <string name="main_text_title">Main Activity</string>
 
 
 </resources>
