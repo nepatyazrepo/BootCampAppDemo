@@ -63,6 +63,13 @@ public class LoginActivity extends AppCompatActivity {
                 Log.i(TAG, "isi password : " + password);
             }
         });
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toRegisterActivity();
+            }
+        });
     }
 
     private void initRetrofit() {
@@ -97,6 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, apiResponse.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
+
             @Override
             public void onFailure(Call<ApiResult> call, Throwable t) {
                 Toast.makeText(LoginActivity.this, "Error : " + t.getMessage(), Toast.LENGTH_SHORT).show();
@@ -105,13 +113,17 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    private void toMainActivity(){
+    private void toMainActivity() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
 
-
+    private void toRegisterActivity() {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 
 }
