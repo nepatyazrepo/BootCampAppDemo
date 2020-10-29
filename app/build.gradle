@@ -34,6 +34,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.1'
 
     //retroft http library
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
@@ -44,7 +45,10 @@ dependencies {
 
     //validatetor
     implementation 'com.github.nisrulz:validatetor:1.0.0'
-
+    //toast library
+    implementation 'com.github.GrenderG:Toasty:1.5.0'
+    //lottie file lib
+    implementation 'com.airbnb.android:lottie:3.4.2'
 
 
 }

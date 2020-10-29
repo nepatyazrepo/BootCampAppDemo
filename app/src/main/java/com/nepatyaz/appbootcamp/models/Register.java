@@ -9,18 +9,18 @@ public class Register {
     private String email;
     private String firstName;
     private String lastName;
-    private List<String> role;
+    private List<String> roles;
 
     public Register() {
     }
 
-    public Register(String username, String password, String email, String firstName, String lastName, List<String> role) {
+    public Register(String username, String password, String email, String firstName, String lastName, List<String> roles) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.role = role;
+        this.roles = roles;
     }
 
     public String getUsername() {
@@ -63,12 +63,12 @@ public class Register {
         this.lastName = lastName;
     }
 
-    public List<String> getRole() {
-        return role;
+    public List<String> getRoles() {
+        return roles;
     }
 
-    public void setRole(List<String> role) {
-        this.role = role;
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
     }
 
     @Override
@@ -79,7 +79,7 @@ public class Register {
                 ", email='" + email + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", role=" + role +
+                ", role=" + roles +
                 '}';
     }
 }
